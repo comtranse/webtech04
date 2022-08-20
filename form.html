@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="https://img.icons8.com/parakeet/344/experimental-internet-parakeet.png">
+    </head>
+    <body>
+        <label for="name">Enter username : </label>
+        <input type="text" maxlength="10" required id="name"/><br><hr>
+        <label for="pass">Password : </label>
+        <input type="password" required id="pass"/><br><hr>
+        <label for="mob" >Mobile no : </label>
+        <input type="number"  required id="mob"/><br><hr>
+        <label for="email">Enter Email : </label>
+        <input type="email" readonly id="email"/><br><hr>
+        
+        <span>Select Your gender :</span>
+        <input type="radio" id="Male" name="gender" value="Male">
+         <label for="html">Male</label>
+        <input type="radio" id="Female" name="gender" value="Female">
+         <label for="css">Female</label><br><hr>
+        <label for="photo">Upload photo : </label>
+         <input type="file" id="photo"/><br><hr>
+         <label for="date"> Select date and time</label>
+         <input type="date" min='1899-01-01' max='2023-01-01' id="date"> <input type="time" id="date"><br><hr>
+         
+        <textarea name="information" placeholder="Enter Address" id="textarea" cols="30" rows="10"></textarea>
+
+         <br>
+        <hr>
+        <label for="country">Country:</label>
+
+<select name="country" id="country">
+  <option value="India">India</option>
+  <option value="Africa">Africa</option>
+  <option value="Newzeland">Newzeland</option>
+  <option value="England">England</option>
+</select>
+<br><hr>
+
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> I have a bike</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> I have a car</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3"> I have a boat</label><br>
+<br><hr>
+<button type="submit">Submit</button><br><hr>
+    </body>
+</html>
