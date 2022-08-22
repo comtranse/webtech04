@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Form for student registration</title>
+</head>
+<body> 
+
+<form name="frmreg" action="#" method="post">
+<table bordere="1" cellspadding="20px" callspacing="20px" width="50%" style="border:1px;margin-left:auto;margin-right:auto;">
+    
+
+    <caption> <strong> <h1> Registration </h1></strong> </caption>
+
+
+<tr>
+<td> <label> username: </label> </td>
+<td> <input type="text" name="txtuname" size="22px" placeholder="Enter username" required></td>
+ </tr>
+
+
+<tr>
+<td> <label> Email: </label> </td>
+<td> <input type="email" name="txtemail" size="22px" placeholder="Enter email" required></td>
+ </tr>
+ 
+ 
+<tr>
+<td> <label> password: </label> </td>
+<td> <input type="password" name="txtpass" size="22px" placeholder="Enter passward" required></td>
+ </tr>
+ 
+<tr>
+<td> <label> Mobile No: </label> </td>
+<td> <input type="text" name="txtmob" size="22px" placeholder="Enter mobile number" required></td>
+ </tr>
+ <tr>
+    <td> <label>Date Of Birth: </label> </td>
+    <td> <input type="date" name="txtdate" size="22px" placeholder="enter date" required></td>
+</tr>
+<tr>
+    <td> <label> Select Gender:</label> </td>
+    <td> <input type="radio" name="gender" value="male"> <label>Male</label>
+     <input type="radio" name="gender" value="female"> <label>Female</label>
+     <input type="radio" name="gender" value="others"> <label>Others</label></td>
+ 
+</tr>
+<tr>
+    <td>
+    <label>Select Country:</label>
+       </td>
+       <td>
+<select id="country">
+  <option value="India">India</option>
+  <option value="America">Americe</option>
+  <option value="England">England</option>
+  <option value="Japan" >Japan</option>
+</select>
+       </td>
+</tr>
+<tr>
+    <td> <label>Choose Photo:</label></td>
+    <td>  <input type="file" id="myFile" name="filename">  </td>
+    </tr>
+<tr> <td>
+    <label>Select Subject: </label></td>
+    <td><input type="checkbox" name="sub" value="marathi"> <label>marathi</label>
+    <input type="checkbox" name="sub" value="hindi"> <label>hindi</label>
+    <input type="checkbox" name="sub" value="english"> <label>english</label>
+ </td></tr>
+<tr>
+    <td> <label> Choose time: </label> </td>
+    <td> <input type="time" name="txttime" size="22px" placeholder="choose time " required></td>
+     </tr> 
+     
+     <tr>
+        <td> <label> Week: </label> </td>
+        <td> <input type="text" name="txtweek" size="22px" placeholder="choose week" required></td>
+         </tr>
+         <tr>
+            <td> <label> Month: </label> </td>
+            <td> <input type="text" name="txtmonth" size="22px" placeholder="choose Month" required></td>
+             </tr>
+             <tr>
+                <td> <label> Local Date and time: </label> </td>
+                <td> <input type="text" name="txtdatetime" size="22px" placeholder="choose date and time" required></td>
+                 </tr>
+    <tr>
+    <td> <label> Address: </label> </td>
+    <td> <input type="text" name="txtadd" size="22px" placeholder="Enter Address" required></td>
+    </tr>
+             <tr>
+ <td> <input type="submit" name="btnsubmit" value="submit"></td>
+  <td>   <input type="submit" name="btncancel" value="cancel"></td>
+
+ </tr>
+ 
+
+</table>
+</form>
+</body>
+</html>
