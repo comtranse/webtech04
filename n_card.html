@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Card</title>
 </head>
 <style>
     *{
+    
         margin: 0;padding: 0;
     }
     .main{
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            transform: matrix3d();
             
     }
     .child {
@@ -25,7 +27,9 @@
         border:2px;
         border-radius: 9px 9px 9px 9px;  
         box-shadow: rgba(204, 238, 188, 0.948) 0px 54px 55px, rgba(234, 173, 173, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
     }
+
     .first{
         border:2px solid red;
 
@@ -44,6 +48,13 @@
         height: 140px;
         padding: 4px 9px;
         overflow: hidden;
+        
+    
+    }
+    button:hover{
+        background-color: aqua;
+        
+    
     }
     .button{
         padding-top: 20px;
@@ -56,6 +67,7 @@
         color: aliceblue;
         border-radius: 9px;
         border-color: none;
+        
     }
 </style>
 <body>
