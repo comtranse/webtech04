@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIENTELE</title>
+    <Style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 100%;
+        }
+        .title{
+            text-align: center;
+            font-size: 40px;
+            padding: 4px;
+            line-height: 1em;
+            color: rgb(255, 181, 44);
+        }
+        .grid{
+            top: 30%;
+            margin: auto;
+            margin-top: 50px;
+            max-width: 1200px;
+            padding-bottom: 50px;
+        }
+        .allcard{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 10px;
+        }
+        .allcard div{
+            margin: 3px;
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+        .card{
+            display: flex;
+        }
+        p{
+            padding-top: 3px;
+            font-size: 16px;
+        }
+        i{
+            font-size: 30px;
+            margin-top: 10px;
+            animation: icon-rotated 10s ease-in-out infinite;
+        }
+        @keyframes icon-rotated{
+            0% {
+        transform: rotateY(0deg);
+        }
+        100% {
+        transform: rotateY(360deg);
+        }
+        }
+        .icon{
+            border-radius: 100%;
+            color: white;
+            width: 73px;
+            shape-outside:c;
+            text-align: center;
+            font-size: 30px;
+            height: 73px;
+            justify-content: center;
+            box-shadow: 1px 1px 5px rgb(0 0 0 / 50%);
+        }
+        @media only screen and (max-width:1200px) {
+            .grid{
+                max-width: 1000px;
+            }
+            .allcard{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+        @media only screen and (max-width:1000px) {
+            .grid{
+                max-width: 800px;
+            }
+            .allcard{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media only screen and (max-width:600px){
+            .grid{
+                max-width: 350px;
+            }
+            .allcard{
+                grid-template-columns: repeat(1,1fr);
+            }
+            .hide {
+                display: none;
+                visibility: hidden;
+            }
+        }
+    </Style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css"/>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="grid">
+        <h3 class="title">___CLIENTELE___</h3>
+        <div class="allcard">
+        <div class="card">
+            <div class="icon" style="background: #6D214F;"><i class="fas fa-handshake"></i></div>
+            <div>
+                <h4>Consultants</h4>
+                <p>
+                    Our Best in class technical team readily work hand-in-hand with top consultants across the state.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon" style="background: #08461b;"><i class="fas fa-sitemap"></i></div>
+            <div>
+                <h4>Architects</h4>
+                <p>
+                    Astaticallypleasing and user-friendly design with wide variety of commercial and domestic products makes us a one stop shop for architects and their associates
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon" style="background: #72b6e3;"><i class="fa fa-building"></i></div>
+            <div>
+                <h4>Builders and Developers</h4>
+                <p>
+                    A remarkable price range and great warranty products gives builders and developers the much-needed flexibility.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon" style="background: #5826cc;"><i class="fas fa-users-cog"></i></div>
+            <div>
+                <h4>Engineers and Contractors</h4>
+                <p>
+                    Our best-in-class technical team are more than capable of interpreting an engineer’s vision and cater to their standards.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon" style="background: #55d569;"><i class="fas fa-running"></i></div>
+            <div>
+                <h4>Spas, Fitness and Health Clubs</h4>
+                <p>
+                    Our new range of VFD pumps will give your customer a pleasant experience and help in maintaining the ambiance.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon" style="background: #d28d26;"><i class="fas fa-hotel"></i></div>
+            <div>
+                <h4>Hotels</h4>
+                <p>
+                    We also provide customized water purification and treatment solutions as per your needs.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon" style="background: #d30707;"><i class="fas fa-hospital"></i></div>
+            <div>
+                <h4>Hospitals</h4>
+                <p>
+                    9 out of 10 doctors recommend our pumps! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, eveniet.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon" style="background: #878e2d;"><i class="fas fa-user-graduate"></i></div>
+            <div>
+                <h4>Private owners</h4>
+                <p>
+                    Our Majority customers include private residential owners looking for top quality customized pressure booster systems , water heating solutions and automation .
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon" style="background: #e86ac6;"><i class="fas fa-building"></i></div>
+            <div>
+                <h4>Companies and Organizations</h4>
+                <p>
+                    Designed for manufacturing units, aiding of water purifier plants, and other applications
+                </p>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
